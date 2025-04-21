@@ -20,7 +20,6 @@ export default function DashboardLayout({
                 height={100}/>
         </Link>
         <Menu/>
-
       </div>
       {/* right */}
       <div className="w-full md:w-[92%] lg:w-[86%] xl:w-[86%] bg-blue-50">
