@@ -1,4 +1,26 @@
-const mentuItmes = [
+"use client"
+
+import Link from "next/link"
+import { useState } from "react"
+
+interface DropdownItem {
+  name: string;
+  href: string;
+}
+
+interface MenuItem {
+  label: string;
+  icon?: string;
+  href?: string; // Optional because some items have dropItems instead
+  dropItems?: DropdownItem[]; // Optional because some items have a direct href
+}
+
+interface MenuSection {
+  title: string;
+  items: MenuItem[];
+}
+
+const mentuItmes: MenuSection[] = [
   {
     title: "DASHBOARD",
     items: [
@@ -522,8 +544,9 @@ const mentuItmes = [
 ]
 
 const Menu = () => {
+
   return (
-    <div className="flex">
+    <div className="mt-4 text-sm">
 
     </div>
   )
